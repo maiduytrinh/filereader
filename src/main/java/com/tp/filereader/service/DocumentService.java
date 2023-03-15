@@ -8,7 +8,6 @@ import com.tp.filereader.common.ResultContext;
 import com.tp.filereader.entity.Documents;
 
 public interface DocumentService {
-	public static List<Documents> documentsUpdate = new ArrayList<>();
 	
 	public ResultContext<List<Documents>> getListDocumentOfCategory(String category, Integer limit);
 	
@@ -16,5 +15,5 @@ public interface DocumentService {
 	
 	public ResultContext<Documents> recordViewFile(int s);
 	
-	public TimerTask autoRecordFile();
+	public void start();
 }
