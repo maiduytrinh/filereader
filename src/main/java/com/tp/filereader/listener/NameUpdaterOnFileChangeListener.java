@@ -6,7 +6,7 @@ import java.io.File;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 
-import com.ringtone.token.Token;
+// import com.ringtone.token.Token;
 import com.tp.filereader.Server;
 import com.tp.filereader.Utils;
 import com.tp.filereader.director.service.DirectoryWatchService.OnFileChangeListener;
@@ -41,7 +41,7 @@ public class NameUpdaterOnFileChangeListener implements OnFileChangeListener {
 			LOG.error("Initilization NameUpdaterOnFileChangeListener error: ", e, false);
 		}
 		//
-		Token.loadConfig(watchDir + "/" + "dataAppId.txt");
+		// Token.loadConfig(watchDir + "/" + "dataAppId.txt");
 	}
 
 	public void setStatusService(StatusService statusService) {
@@ -76,7 +76,7 @@ public class NameUpdaterOnFileChangeListener implements OnFileChangeListener {
 		try {
 			String watchDir = System.getProperty("watched.dir", Server.WATCHED_DIR);
 			if (filePath.contains("dataAppId")) {
-				Token.loadConfig(watchDir + "/" + filePath);
+				// Token.loadConfig(watchDir + "/" + filePath);
 			}
 			if(System.getProperty("supportBee", "").equals("true")) {
 				String svInfo = System.getProperty("mainServer", "false");
