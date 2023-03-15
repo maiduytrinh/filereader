@@ -124,9 +124,9 @@ public class Server {
 			showHelp(settings.getHelp());
 		}
 
-		// 5 giây lưu list record 1 lần
+		// 10 giây lưu list record 1 lần
 		DocumentService documentService = new DocumentServiceImpl();
-		new Timer().schedule(documentService.autoRecordFile(), 0, 10000);
+		documentService.start();
 
 	}
 
