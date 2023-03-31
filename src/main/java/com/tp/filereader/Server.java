@@ -118,10 +118,10 @@ public class Server {
 			});
 		} catch (CommandLineException e) {
 			// some command line setting was invalid ... show help
-			LOG.error("Failed to get settings: ", e);
-
-			showVersion();
-			showHelp(settings.getHelp());
+//			LOG.error("Failed to get settings: ", e);
+//
+//			showVersion();
+//			showHelp(settings.getHelp());
 		}
 
 		// 10 giây lưu list record 1 lần
