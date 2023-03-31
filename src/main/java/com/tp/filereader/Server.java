@@ -125,8 +125,8 @@ public class Server {
 		}
 
 		// 10 giây lưu list record 1 lần
-//		DocumentService documentService = new DocumentServiceImpl();
-//		documentService.start();
+		DocumentService documentService = new DocumentServiceImpl();
+		documentService.start();
 
 	}
 
